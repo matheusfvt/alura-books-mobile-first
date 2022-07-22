@@ -1,0 +1,137 @@
+.contato {
+    padding: 1.5rem;
+    background-color: var(--cor-fundo-branco);
+}
+
+.contato__titulo,
+.contato__texto {
+    background: var(--cor-fundo-banner);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.contato__texto {
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.contato__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--cor-texto);
+    color: var(--cor-texto);
+    border-radius: 24px;
+    padding: 0.8rem 1.5rem;
+    width: 90%;
+}
+
+.contato__pesquisa::placeholder {
+    color: var(--cor-texto);
+    background: url("../imgs/Email.svg") no-repeat left center;
+    padding-left: 2rem;
+    text-align: left;
+    opacity: 1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+/* FOOTER */
+.rodape {
+    background-color: var(--cor-fundo);
+    border-top: 1px solid #858585;
+    padding: 1rem 1.5rem 1.5rem;
+}
+
+.rodape__titulo {
+    color: var(--cor-texto-preto);
+    line-height: 24px;
+}
+
+.rodape__lista {
+    display: none;
+}
+/* FOOTER */
+@media screen and (min-width: 1024px) {
+    .contato {
+        padding: 2rem 10rem 3rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .contato__texto {
+        margin-top: 1.25rem;
+        margin-bottom: 0;
+    }
+
+    .contato__div {
+        display: flex;
+        align-items: center;
+    }
+    /* FOOTER */
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3.5rem;
+        padding-bottom: 4.4rem;
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .rodape__lista {
+        display: unset;
+    }
+
+    .rodape__lista-titulo {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #858585;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .rodape__lista-item {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .rodape__lista-item-nome {
+        font-size: 14px;
+        line-height: 21px;
+        color: #474646;
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 3rem 30vw;
+    }
+
+    .rodape {
+        padding: 3.5rem;
+    }
+
+    .rodape__lista {
+        padding-left: 1.5rem;
+        border-left: 1px solid #858585;
+    }
+}
